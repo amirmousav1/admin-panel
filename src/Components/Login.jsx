@@ -40,7 +40,7 @@ export default function Login() {
   }
   return (
     <section className="container mx-auto px-4">
-      <h1 className="text-center text-3xl font-bold">Login</h1>
+      <h1 className="text-center text-3xl my-6 font-bold">Login</h1>
       <form
         onSubmit={handleSubmitLogin}
         className="flex flex-col mt-4 gap-4 border-2 border-black rounded-2xl p-4"

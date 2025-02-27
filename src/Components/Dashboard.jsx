@@ -69,14 +69,14 @@ export default function Dashboard() {
         <button
           disabled={totalPages === page}
           onClick={() => setPage((page) => page + 1)}
-          className="bg-green-500 text-green-50 px-4 py-1 disabled:cursor-not-allowed cursor-pointer"
+          className="bg-green-500 text-green-50 px-4 py-1 disabled:bg-gray-400 disabled:cursor-not-allowed cursor-pointer"
         >
           {"<"} Next
         </button>
         <button
           onClick={() => setPage((page) => page - 1)}
           disabled={page === 1}
-          className="bg-green-500 text-green-50 px-4 py-1 disabled:cursor-not-allowed cursor-pointer"
+          className="bg-green-500 text-green-50 px-4 py-1 disabled:bg-gray-400 disabled:cursor-not-allowed cursor-pointer"
         >
           Prev &gt;
         </button>
