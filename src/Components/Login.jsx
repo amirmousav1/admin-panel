@@ -43,11 +43,11 @@ export default function Login() {
       <h1 className="text-center text-3xl my-6 font-bold">Login</h1>
       <form
         onSubmit={handleSubmitLogin}
-        className="flex flex-col mt-4 gap-4 border-2 border-black rounded-2xl p-4"
+        className="flex flex-col items-center gap-4 w-full"
       >
         <input
           required
-          className="bg-gray-200 p-2 outline-none"
+          className="bg-gray-200 w-full md:w-[500px] p-2 outline-none"
           type="email"
           placeholder="email"
           value={email}
@@ -55,13 +55,13 @@ export default function Login() {
         />
         <input
           required
-          className="bg-gray-200 p-2 outline-none"
+          className="bg-gray-200 w-full md:w-[500px] p-2 outline-none"
           type="password"
           placeholder="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button className="bg-green-500 text-white p-2 outline-none cursor-pointer">
+        <button className="bg-green-500 text-white w-full md:w-[500px] p-2 outline-none cursor-pointer">
           Login
         </button>
       </form>
